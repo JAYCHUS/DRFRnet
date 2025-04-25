@@ -6,17 +6,21 @@ This is the code of DRFRNet:A Dual-Resolution Network with Feature Rectification
 ## requirements  
 Here I list the software and hardware used in my experiment  
 pytorch==1.9.1  
-4090*2  
+4090*1   
 cuda==12.3  
 ## Quick start  
 ### Data preparation  
-You need to download the Cityscapesdatasets. and rename the folder cityscapes, then put the data under data folder.  
-└── data  
-  ├── cityscapes  
-  └── list  
+You need to download the Cityscapes（https://www.cityscapes-dataset.com/） datasets. and rename the folder cityscapes, then put the data under data folder.  
+```
+└── data
+    ├── cityscapes
+       └── list
+```
 ### TRAIN  
-train the model with 2 nvidia-4090  
+train the model with 1 nvidia-4090  
+```
 python tools/train.py --cfg configs/cityscapes/DRFRnet - S.yaml
+```
 ### SPEED
 The test speed follows the DDRNet and PIDNet test methodology, and the speed test is in speed_test.py
 ### Heat Map Image (SINGLE CLASS)
