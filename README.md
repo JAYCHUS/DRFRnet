@@ -10,7 +10,7 @@ pytorch==1.9.1
 cuda==12.3  
 ## Quick start  
 ### Data preparation  
-You need to download the Cityscapes（https://www.cityscapes-dataset.com/） datasets. and rename the folder cityscapes, then put the data under data folder.  
+You need to download the [Cityscapes]（https://www.cityscapes-dataset.com/） datasets. and rename the folder cityscapes, then put the data under data folder.  
 ```
 └── data
     ├── cityscapes
